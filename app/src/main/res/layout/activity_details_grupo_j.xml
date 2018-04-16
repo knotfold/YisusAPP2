@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2F0"
+    android:id="@+id/LinearLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E2E2F0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewGrupoJuvenil"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_background" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewNombreGrupoJuvenil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_grupoj"
+                        android:gravity="fill_horizontal"
+                        android:text="--"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/textViewHorarioGrupoJuvenil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_reloj"
+                        android:gravity="fill_horizontal"
+                        android:text="--"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewNombreCoordinador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_coordi"
+                        android:gravity="fill_horizontal"
+                        android:text="--"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+                        android:paddingBottom="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewTelefonoCoordinador"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/icon_cel"
+                        android:gravity="fill_horizontal"
+                        android:text="--"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:paddingBottom="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/textViewCorreoCoordinador"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/icon_email"
+                        android:gravity="fill_horizontal"
+                        android:text="--"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:paddingBottom="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleViewIglesiaGrupoJD"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool2bgoodgav.warcr.yisusapp.IglesiaDetails"
+    android:background="#E2E2F0">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#E2E2F0"
+             android:orientation="vertical"
+             >
+
+            <ImageView
+                android:id="@+id/imageViewIglesia"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_background" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                  <TextView
+                      android:id="@+id/textViewNombreIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableLeft="@drawable/iglesia_icon"
+                      android:gravity="fill_horizontal"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:padding="7dp"
+                      />
+               </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                  <TextView
+                      android:id="@+id/textViewDireccionIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableLeft="@drawable/icon_ubicacion"
+                      android:gravity="fill_horizontal"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      />
+               </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:padding="5dp"
+                   android:paddingBottom="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp">
+
+                  <TextView
+                      android:id="@+id/textViewHorariosIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableLeft="@drawable/icon_reloj"
+                      android:gravity="fill_horizontal"
+                      android:text=" Horarios:"
+                      android:textColor="#000000"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      />
+
+                  <TextView
+                      android:id="@+id/textViewMisaIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="fill"
+                      android:text="Misas:"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+                      />
+
+                  <TextView
+                      android:id="@+id/textViewHorariosMisaIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      />
+
+                  <TextView
+                      android:id="@+id/textViewConfesionesIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="fill"
+                      android:text="Confesiones:"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+                      />
+
+                  <TextView
+                      android:id="@+id/textViewHorariosConfesionesIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+                       />
+
+                  <TextView
+                      android:id="@+id/textViewOficinaIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="fill"
+                      android:text="Oficina:"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+                       />
+
+                  <TextView
+                      android:id="@+id/textViewHorariosOficinaIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+                       />
+
+               </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+
+                  <TextView
+                      android:id="@+id/textViewTelefonoIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:drawableLeft="@drawable/icon_cel"
+                      android:gravity="fill_horizontal"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+
+                      />
+               </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+
+                  <TextView
+                      android:id="@+id/textViewAvisoSemIglesia"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:drawableLeft="@drawable/icon_aviso"
+                      android:gravity="fill_horizontal"
+                      android:text="--"
+                      android:textColor="#000000"
+                      android:textSize="16sp"
+                      android:padding="5dp"
+
+                      />
+               </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+         </LinearLayout>
+   </ScrollView>
+</LinearLayout>
